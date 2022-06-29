@@ -83,3 +83,7 @@ Start-Process -FilePath Chrome -ArgumentList https://www.amazon.com/
 
 #-----------Blocking Websites in Chrome--------------------------
 
+$hostfile = "$env:windir\system32\drivers\etc\hosts"
+$file = Get-Content $hostfile
+$newfile = $file -replace "8.8.8.8   Google.com","4.4.4.4   Google.com"
+Set-Content -Value $newfile -Path $hostfile -Force
