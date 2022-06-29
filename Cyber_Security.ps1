@@ -75,3 +75,11 @@ Start-Process -FilePath "$HOME\Downloads\vscode.exe" -ArgumentList "/S /v/qn"
 Invoke-WebRequest -Uri https://webwerks.dl.sourceforge.net/project/openofficeorg.mirror/4.1.12/binaries/en-US/Apache_OpenOffice_4.1.12_Win_x86_install_en-US.exe -OutFile "$HOME\Downloads\openoffice.exe"
 Start-Process -FilePath "$HOME\Downloads\openoffice.exe" -ArgumentList "/S /v/qn"
 
+#-----------Adding Bookmarks in Chrome--------------------------
+
+Start-Process -FilePath Chrome -ArgumentList https://www.youtube.com/
+Start-Process -FilePath Chrome -ArgumentList https://www.amazon.com/
+#Start-Process -FilePath www.c-sharpcorner.com
+
+#-----------Blocking Websites in Chrome--------------------------
+
